@@ -5,69 +5,93 @@
 
 # Respuestas
 PARTE I
-1 y 2)
+1. Crea un repositorio localmente. 
 Procedemos a crear el repositorio de manera local en la terminal de git bash
-![Logo de mi proyecto](imagenes/Imagen1.png)
- 
+![Logo de mi proyecto](imagenes/img1.png)
+2. Agrega un archivo de ejemplo al repositorio, el README.md puede ser una gran opción. 
 Como se recomienda agregar el archive readme lo agregamos con el comando touch 
-![Logo de mi proyecto](imagenes/Imagen2.png)
-![Logo de mi proyecto](imagenes/Imagen3.png)
+![Logo de mi proyecto](imagenes/img2.png)
 
-3) como se usan estos comandos git add y git commit -m “mensaje”?
-git add: Este comando sirve para agregar archivos o cambios especificos, pero es una preparación para el commit mas no lo realiza.
-  Ejemplo de uso:
-      git add archivo.txt(Esto agrega el archivo archivo.txt al área de preparación.)
-      Para agregar todo:
-      git add .  (Esto agregará todos los cambios de los archivos que han sido modificados o creados.)
-git commit: Este comando es el que realiza los cambios que se hallan añadido al area de preparacion y el mensaje se puede usar para describir lo que se haya hecho en el cambio.
-  Ejemplo de uso: 
-git commit -m "Añadir nueva funcionalidad al archivo de inicio" (La idea es que el mensaje sea directo y consciso especificando el cambio realizado).
+3. Averigua para qué sirve y como se usan estos comandos git add y git commit -m “mensaje” 
 
+Git add: 
 
-6 y 7)
+¿Para qué sirve?: Este comando se utiliza para agregar los cambios de un archivo o archivos a la área de preparación (staging area), que es como un espacio intermedio donde se almacenan los cambios antes de hacer un commit. 
 
-![Logo de mi proyecto](imagenes/Imagen4.png)
-![Logo de mi proyecto](imagenes/Imagen5.png)
-![Logo de mi proyecto](imagenes/Imagen6.png)
+¿Cómo se usa?: Si has modificado un archivo, por ejemplo archivo.txt, y deseas incluirlo en tu próximo commit, ejecutarías: 
 
+git add archivo.txt 
 
-8)
-![Logo de mi proyecto](imagenes/Imagen7.png)
+ 
 
+Git commit: 
 
+¿Para qué sirve?: Este comando guarda los cambios que han sido agregados previamente al área de preparación (git add) en el historial del repositorio. Al hacer un commit, se crea una instantánea del estado actual del proyecto. 
 
+¿Cómo se usa?: Después de haber usado git add, puedes ejecutar un commit con el siguiente comando: 
 
+git commit -m "Mensaje descriptivo de los cambios" 
 
+4. Abre una cuenta de github, si ya la tienes, enlazala con el correo institucional. 
+![Logo de mi proyecto](imagenes/img3.png)
+
+5. Crea un repositorio en blanco (vacío) e GitHub. 
+
+Este repositorio estaba vacio pero al enlazarse se le agrego el readme y el primer commit 
+![Logo de mi proyecto](imagenes/img4.png)
+![Logo de mi proyecto](imagenes/img5.png)
+
+6. Configura el repositorio local con el repositorio remoto.
+![Logo de mi proyecto](imagenes/img6.png)
+
+7. Sube los cambios, teniendo en cuenta lo que averiguaste en el punto 3 Utiliza los siguientes comando en el directorio donde tienes tu proyecto, en este orden:
+![Logo de mi proyecto](imagenes/img7.png)
+
+8. Configura el correo en git local de manera correcta Configurar correo electrónico en GitHub
+En esta parte al introducir el comando github nos arroja una ventana donde se puede ver la sincronizacion del correo con el repositorio local
+![Logo de mi proyecto](imagenes/img8.png)
+Ya se inicio session con el mismo correo y todo esta en orden  
+
+9. Vuelve a subir los cambios y observa que todo esté bien en el repositorio remoto (en GitHub).
+En este punto ya se puede encontrar el README y la sincronizacion es correcta
+![Logo de mi proyecto](imagenes/img9.png)
 
 PARTE II (Trabajo en parejas) 
 
 1. Se escogen los roles para trabajar en equipo, una persona debe escoger ser "Owner" o Propietario del repositorio y la otra "Collaborator" o Colaborador en el repositorio. 
 a. Cristian silva será el owner y juan Miguel rojas será el collaborator.
-2. El owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1 
+
+3. El owner agrega al colaborador con permisos de escritura en el repositorio que creó en la parte 1 
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224532.png)
-3. El owner le comparte la url via Teams al colaborador 
+
+5. El owner le comparte la url via Teams al colaborador 
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224731.png)
-4. El colaborador acepta la invitación al repositorio
+
+7. El colaborador acepta la invitación al repositorio
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224748.png)
-5. Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo. 
+
+9. Owner y Colaborador editan el archivo README.md al mismo tiempo e intentan subir los cambios al mismo tiempo. 
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224856.png)
-6. ¿Que sucedió? 
+
+11. ¿Que sucedió? 
 a. Como se intenta hacer un cambio en simultáneo desde la misma rama el git no puede combinar automáticamente ambos cambios y pedirá que se resuelva el conflicto manualmente lo cual se conoce como(merge conflict).
 
-7. La persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, cúando haces pull de los cambios, los archivos tienen los símbolos <<< === y >>> (son normales en la resolución de conflictos), estos conflictos debes resolverlos manualmente. Como resolver Conflictos GitHub 
+12. La persona que perdió la competencia de subir los cambios, tiene que resolver los conflictos, cúando haces pull de los cambios, los archivos tienen los símbolos <<< === y >>> (son normales en la resolución de conflictos), estos conflictos debes resolverlos manualmente. Como resolver Conflictos GitHub 
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224928.png)
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20224956.png)
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20225142.png)
-8. Volver a repetir un cambio sobre el README.md ambas personas al tiempo para volver a tener conflictos. 
+
+14. Volver a repetir un cambio sobre el README.md ambas personas al tiempo para volver a tener conflictos. 
 	El conflicto en este caso le apareció a la otra persona en este caso Miguel.
 
-9. Resuelvan el conflicto con IntelliJ si es posible, Resolver conflictos en IntelliJ 
+15. Resuelvan el conflicto con IntelliJ si es posible, Resolver conflictos en IntelliJ 
 De esta forma ya sabes resolver conflictos directamente sobre los archivos y usando un IDE como IntelliJ, esto te será muy útil en los futuros trabajos en equipo con Git. 
 Aquí se puede evidenciar el conflicto encontrado al tratar de hacer los commits al mismo tiempo para solucionarlo se utilizó la herramienta de intellij nos ayuda a identificar los conflictos de manera visual
 Aquí solucionamos el conflicto en este caso dejando o uniendo los commits realizado por cada uno.
 ![Logo de mi proyecto](imagenes/Captura%20de%20pantalla%202025-01-28%20225331.png)
 
 PARTE III (Trabajo de a parejas)
+
 1. ¿Hay una mejor forma de trabajar con git para no tener conflictos?
 Para no llegar a tener conflictos en git podemos realizar la creación de una nueva rama, esta nos va permitir trabajar en una funcionalidad, corrección de errores, o mejoras específicas. Esto separa los cambios del código principal evitando estos errores por trabajar la misma rama al tiempo.
 
